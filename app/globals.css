@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+
+  @apply bg-black text-white;
+
+}
+
+h3{
+  @apply font-normal text-sm leading-tight overflow-ellipsis whitespace-nowrap overflow-hidden;
+}
+img {
+  @apply rounded-2xl transition-all duration-300 ease-in-out; /* Ganti dengan rounded-lg atau sesuai kebutuhan */
+}
+
+img:hover {
+    @apply scale-105; /* Gambar akan sedikit membesar & ada shadow saat di-hover */
+}
