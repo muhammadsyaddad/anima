@@ -7,15 +7,23 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    borderWidth: {
+      DEFAULT: '1px',
+      '0.1': '0.1px',
+    },
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-        'gray': '#0B192C',
-        'black': '#000000',
-
-      },
-    },
-  },
-  plugins: [],
+        color: {
+          primary: '#eeeeee',
+          accent: '#ffc639',
+          secondary: '#db0000',
+          dark: '#121212',
+          white: '#ffffff'
+        }
+      }
+   },
+ },
+ plugins: [],
 } satisfies Config;
+
+

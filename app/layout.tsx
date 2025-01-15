@@ -1,4 +1,4 @@
-import Navbar from "@/components/Utilities/Navbar";
+import Navbar from "@/components/Navbar";
 import type { Metadata } from "next";
 import { Quicksand, Geist } from "next/font/google";
 import "./globals.css";
@@ -28,7 +28,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${quicksand.variable} ${geistSans.variable} antialiased`}>
         <Navbar/>
-        <div className="justfy justify-center p-8">
+        <div className="justfy justify-center p-14">
           {children}
         </div>
       </body>

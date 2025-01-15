@@ -3,9 +3,10 @@
 @tailwind utilities;
 
 
+
 html {
 
-  @apply bg-black text-white;
+  @apply bg-color-dark text-white;
 
 }
 
