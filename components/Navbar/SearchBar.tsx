@@ -39,10 +39,10 @@ const SearchBar = () => {
                 onKeyDown={handleSearch} // Handle Enter key press
             />
             <button
-                className="absolute top-3 end-2"
+                className="absolute md:top-3 md:end-2 top-2 end-2"
                 onClick={handleSearch} // Handle button click
             >
-                <FaMagnifyingGlass color="black" />
+                <FaMagnifyingGlass size={15} color="black " />
             </button>
         </div>
     )

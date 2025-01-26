@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 
-
+@media (max-height: 287px) {
+  .image-container img {
+    display: none; /* Sembunyikan gambar jika tinggi layar kurang dari 287px */
+  }
+}
 html {
 
   @apply bg-color-dark text-white;
@@ -20,3 +24,5 @@ img {
 img:hover {
     @apply scale-105; /* Gambar akan sedikit membesar & ada shadow saat di-hover */
 }
+
+

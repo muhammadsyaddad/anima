@@ -1,11 +1,11 @@
 import Header from "@/components/Animelist/Header"
 import Animelist from "@/components/Animelist"
 import Link from "next/link"
+import { getAnimeRespond } from "./libs/api-libs"
 
 
 const Home = async () => {
-  const data = await fetch('https://api.jikan.moe/v4/top/anime?limit=18')
-  const topAnime = await data.json()
+  const topAnime = await getAnimeRespond("top/anime", 'limit=18')
   return (
     <div className="space-y-14">
       <section>
